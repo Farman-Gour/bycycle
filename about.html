@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-lg" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+        class="scrollspy-example" tabindex="0">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg bg-light" id="scrollspyHeading1">
+
+            <a class="navbar-brand" href="#"><img src="./image/bycycle.png" alt="logo" width="70px" height="auto"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Companies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./atlas.html">Atlas Cycles</a></li>
+                            <li><a class="dropdown-item" href="./avon.html">Avon Cycles</a></li>
+                            <li><a class="dropdown-item" href="bianchi.html">Bianchi Cycles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Log In
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Log In Form</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="form2Example1" class="form-control" />
+                                        <label class="form-label" for="form2Example1">Email address</label>
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="form2Example2" class="form-control" />
+                                        <label class="form-label" for="form2Example2">Password</label>
+                                    </div>
+
+                                    <!-- 2 column grid layout for inline styling -->
+                                    <div class="row mb-4">
+                                        <div class="col d-flex justify-content-center">
+                                            <!-- Checkbox -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="form2Example31" checked />
+                                                <label class="form-check-label" for="form2Example31"> Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <!-- Simple link -->
+                                            <a href="#!">Forgot password?</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <button type="button" class="btn btn-primary btn-block mb-4"> in</button>
+
+                                    <!-- Register buttons -->
+                                    <div class="text-center">
+                                        <p>Not a member? <a href="#!">Register</a></p>
+                                        <p>or sign up with:</p>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- login form -->
+
+                <!-- <button type="button" class="btn btn-danger ">Sign Up</button> -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupform">
+                    Sign Up
+                </button>
+                <div class="modal fade" id="signupform" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Log In Form</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="registerName" class="form-control" />
+                                        <label class="form-label" for="registerName">Name</label>
+                                    </div>
+
+                                    <!-- Username input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="registerUsername" class="form-control" />
+                                        <label class="form-label" for="registerUsername">Username</label>
+                                    </div>
+
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="registerEmail" class="form-control" />
+                                        <label class="form-label" for="registerEmail">Email</label>
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="registerPassword" class="form-control" />
+                                        <label class="form-label" for="registerPassword">Password</label>
+                                    </div>
+
+                                    <!-- Repeat Password input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="registerRepeatPassword" class="form-control" />
+                                        <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                    </div>
+
+                                    <!-- Checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                        <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck"
+                                            checked aria-describedby="registerCheckHelpText" />
+                                        <label class="form-check-label" for="registerCheck">
+                                            I have read and agree to the terms
+                                        </label>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary btn-block mb-3">Sign Up</button>
+                                </form>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <div class="card col-xs-12">
+            <img src="./image/about-us.avif" class="card-img-top" alt="owner">
+            <div class="card-body">
+                <h1 class="card-title text-center">Hello, I'm Albert.</h1>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit natus
+                    deleniti, neque architecto voluptates, sit, veniam dolores minima quasi quia dicta et enim optio
+                    modi tempore assumenda nostrum! Minus amet, iusto quidem in molestias eaque expedita quo iste
+                    explicabo rem perferendis voluptatibus recusandae, reprehenderit perspiciatis ipsam vero suscipit
+                    eius? Necessitatibus quo excepturi ratione eius, aut vitae voluptate ipsa facere reprehenderit
+                    accusamus amet, in consectetur consequuntur deserunt id ea nisi adipisci itaque tempora voluptates
+                    placeat, asperiores neque impedit! Veritatis illum, accusantium perferendis odit dolore totam iste
+                    quasi, adipisci id sapiente exercitationem, dignissimos vero magni. Voluptatem nemo eligendi quo sed
+                    eum.</p>
+                <h2 class="text-center text-decoration-underline">About Us</h2>
+                <p class="ms-5 me-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt corrupti
+                    veritatis eum! Ut itaque nam libero magnam est enim dicta! Laborum, ipsam doloremque. Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Illum, culpa veritatis. Repudiandae expedita obcaecati
+                    nobis debitis pariatur reiciendis facilis officia quam est nihil.</p>
+                <div class="m-auto w-25">
+                    <a href="https://facebook.com"><img src="./image/youtube-logo.png" alt="facebook"></a>
+                    <a href="https://twitter.com"><img src="./image/twitter-logo.png" alt="twitter"></a>
+                    <a href="https://google.com"><img src="./image/google-logo.png" alt="google"></a>
+                    <a href="#" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <!-- footer start -->
+        <footer class="d-flex pt-5 pb-5 bg-warning w-100 justify-content-between" id="navbar-example2">
+            <div>
+                <span>&copy; 2022 Company, Inc</span>
+            </div>
+
+
+            <form>
+                <h5>Subscribe to our newsletter</h5>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+            </form>
+            <a class="nav-link" href="#scrollspyHeading1"><button class="rounded-2 bg-transparent">Go top</button></a>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
